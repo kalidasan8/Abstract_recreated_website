@@ -1,4 +1,4 @@
-*{
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,11 +7,7 @@
 }
 
 
-header{
-    
-    background-color: #000;
-    padding: 0px 30px;
-}
+
 
 .main-container{
     display: flex;
@@ -19,6 +15,10 @@ header{
     padding: 30px 79px 25px 79px;
     font-size: 1.9rem;
     font-weight: 200;
+    background-color: #000;
+  
+    
+   
     
 }
 
@@ -48,6 +48,13 @@ header{
     border-radius: 5px;
     padding: 4px 15px;
     cursor: pointer;
+    margin-right: 10px;
+    
+}
+
+.button{
+    display: flex;
+    
 }
 
 .bttwo{
@@ -62,6 +69,25 @@ header{
     background-color: #fff;
     color: #000;
     transition: 0.2s;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 
@@ -284,8 +310,31 @@ text-decoration: none;
         font-size: 39px;
    
 }
+.main-container {
+    padding: 30px 79px 25px 20px;
+    font-size: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+} 
 
-
+.toggle-button{
+    display: flex;
 }
 
+.button{
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+    
+}
 
+.btone{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.button.active{
+    display: flex;
+}
+
+}
